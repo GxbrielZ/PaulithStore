@@ -14,19 +14,22 @@ const HeroData = [
 
 const Hero = () => {
     return (
-      <div className='w-full h-screen font-lato'>
+      <div className='relative w-full h-[93vh] font-lato'>
         <img className='top-0 left-0 w-full h-full object-cover' src={HeroPic} alt="" />
-        <div className='bg-black/30 absolute top-0 left-0 w-full h-screen'></div>
+        <div className='bg-black/30 absolute top-0 left-0 w-full h-[93vh]'></div>
         <div className='absolute top-0 w-full h-full flex flex-col justify-center text-white'>
-            <div className='md:left-[10%] max-w-[1100px] m-auto absolute p-4'>
-                <h1 className='font-bold text-5xl md:text-7xl drop-shadow-2xl'>
+            <div className='absolute left-[5vw] md:left-[10vw]'>
+                <h1 className='font-bold text-4xl drop-shadow-2xl'>
                     {HeroData[0].title}
                 </h1>
-                <p className='max-w-[600px] drop-shadow-2xl py-2 text-xl'>
+                <p className='max-w-[90vw] md:max-w-[80vw]
+                lg:max-w-[50vw] drop-shadow-2xl my-5 text-[1.15rem]
+                md:text-xl'>
                     {HeroData[0].description}
                 </p>
                 <button
-                    className='border py-2 px-3 rounded-full bg-white text-black'
+                    className='border rounded-lg p-2 hover:text-black
+                    hover:bg-white duration-700'
                 >
                     {HeroData[0].buttonTitle}
                 </button>
