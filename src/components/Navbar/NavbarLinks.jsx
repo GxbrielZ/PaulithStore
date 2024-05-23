@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const MenuLinks = [
     {
@@ -32,12 +33,12 @@ const NavbarLinks = () => {
             {
                 MenuLinks.map((data, index) => (
                     <li key={index}>
-                        <a
-                            href={data.link}
+                        <Link
+                            to={data.link}
                             className='text-white uppercase'
                         >
                             {data.name}
-                        </a>
+                        </Link>
                     </li>
                 ))
             }
