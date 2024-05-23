@@ -1,31 +1,8 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import PaulithLogo from "../../assets/Logo/PaulithLogo.png";
+import NavbarLinks from './NavbarLinks';
 import { MdOutlineShoppingBag } from "react-icons/md";
 import { IoMenu, IoClose } from "react-icons/io5";
-
-const MenuLinks = [
-    {
-        id: 1,
-        name: "Strona Główna",
-        link: "/#home"
-    },
-    {
-        id: 2,
-        name: "Sklep",
-        link: "/#shop"
-    },
-    {
-        id: 3,
-        name: "Regulamin",
-        link: "/#rules"
-    },
-    {
-        id: 4,
-        name: "Kontakt",
-        link: "/#contact"
-    },
-];
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -35,42 +12,19 @@ const Navbar = () => {
 
     return (
         <div 
-            className='absolute w-full flex justify-between p-4 items-center
-            font-lato z-20'
+            className='absolute w-full flex justify-between py-4 px-2 md:px-12 items-center z-20 font-merriweather'
         >
             {/* Logo */}
-            <div className='flex items-center gap-2'>
-                <img className='w-9' src={PaulithLogo} alt="Paulith company logo" />
-                <a
-                    href='#'
-                    className='text-white font-bold text-2xl uppercase
-                    tracking-wide md:cursor-pointer'
-                >
-                    Paulith
-                </a>
-            </div>
+            <a
+                href='#'
+                className='text-white text-2xl uppercase
+                tracking-wide md:cursor-pointer italic'
+            >
+                Paulith
+            </a>
 
             {/* Navbar Center */}
-            <div
-                className='md:flex hidden'
-            >
-                <ul
-                    className='flex flex-col md:flex-row w-full md:gap-[4vw] gap-6'>    
-                    {
-                        MenuLinks.map((data, index) => (
-                            <li key={index}>
-                                <a
-                                    href={data.link}
-                                    className='text-white hover:text-goldenrod
-                                    font-bold uppercase tracking-wide duration-500'
-                                >
-                                    {data.name}
-                                </a>
-                            </li>
-                        ))
-                    }
-                </ul>
-            </div>
+            <NavbarLinks />
 
             {/* Navbar Right Side */}
             <div className='flex items-center'>
