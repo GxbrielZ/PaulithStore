@@ -8,13 +8,8 @@ export default {
     extend: {
       colors: {
         primary: "#92a8d1",
-        secondary: "#abb1cf",
-        prelude: "#c5b9cd",
-        melanie: "#dec2cb",
-        coralCandy: "#f7cac9",
-        goldenrod: '#ffffe0',
-        fossil: '#787276'
       },
+
       container: {
         center: true,
         padding: {
@@ -22,10 +17,11 @@ export default {
           sm: "3rem",
         },
       },
+
+      fontFamily: {
+        'merriweather': ['Merriweather', 'serif'],
+      }
     },
-    fontFamily: {
-      lato: ["Lato", "sans-serif"],
-    }
   },
   plugins: [],
 }
