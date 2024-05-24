@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import MenuLinks from '../../data/MenuLinks';
 
 const ToggleMenu = ({ nav, handleNav }) => {
@@ -12,13 +13,13 @@ const ToggleMenu = ({ nav, handleNav }) => {
             <ul className='flex flex-col items-center'>
                 {MenuLinks.map((data, index) => (
                     <li key={index}>
-                        <a
-                            href={data.link}
+                        <Link
+                            to={data.link}
                             onClick={handleNav}
                             className='text-white font-bold uppercase tracking-wide block py-5'
                         >
                             {data.name}
-                        </a>
+                        </Link>
                     </li>
                 ))}
             </ul>
