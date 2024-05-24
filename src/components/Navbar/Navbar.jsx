@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import PaulithLogo from "../../assets/Logo/PaulithLogo.png";
 import MenuLinks from '../../data/MenuLinks';
 import NavbarLinks from './NavbarLinks';
+import ToggleMenu from './ToggleMenu';
 import { MdOutlineShoppingBag } from "react-icons/md";
 import { IoMenu, IoClose } from "react-icons/io5";
 
@@ -54,26 +55,7 @@ const Navbar = () => {
             </div>
 
             {/* Toggle Menu */}
-            {nav && (
-                <div
-                    className='md:hidden absolute top-0 left-0
-                    flex items-center justify-center
-                    w-full h-screen bg-black/90 text-white'
-                >
-                    <ul className='flex flex-col items-center'>
-                        {MenuLinks.map((data, index) => (
-                            <li key={index}>
-                                <a
-                                    href={data.link}
-                                    className='text-white font-bold uppercase tracking-wide block py-5'
-                                >
-                                    {data.name}
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            )}
+            <ToggleMenu nav={nav} handleNav={handleNav} />
         </div>
     );
 };
