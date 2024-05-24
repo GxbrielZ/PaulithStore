@@ -1,21 +1,26 @@
 const MenuLinks = [
     {
         id: 1,
-        name: "Strona Główna",
-        link: "/#home"
+        name: "Biżuteria",
+        link: "/#jewellery"
     },
     {
         id: 2,
-        name: "Sklep",
-        link: "/#shop"
+        name: "Komplety Biżuterii",
+        link: "/#sets"
     },
     {
         id: 3,
-        name: "Regulamin",
-        link: "/#rules"
+        name: "Materiały",
+        link: "/#materials"
     },
     {
         id: 4,
+        name: "Regulamin",
+        link: "/#terms"
+    },
+    {
+        id: 5,
         name: "Kontakt",
         link: "/#contact"
     },
