@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PaulithLogo from "../../assets/Logo/PaulithLogo.png";
+import MenuLinks from '../../data/MenuLinks';
 import NavbarLinks from './NavbarLinks';
 import { MdOutlineShoppingBag } from "react-icons/md";
 import { IoMenu, IoClose } from "react-icons/io5";
