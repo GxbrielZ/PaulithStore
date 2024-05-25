@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import PaulithLogo from "../../assets/Logo/PaulithLogo.png";
-import MenuLinks from '../../data/MenuLinks';
-import NavbarLinks from './NavbarLinks';
+import NavbarLinksLeft from './NavbarLinksLeft';
+import NavbarLinksRight from './NavbarLinksRight';
+import Logo from './Logo';
 import CartButton from './CartButton';
 import ToggleMenu from './ToggleMenu';
 
@@ -13,19 +13,16 @@ const Navbar = () => {
 
     return (
         <div 
-            className='absolute w-full flex justify-between py-4 px-2 md:px-12 items-center z-20 font-merriweather'
+            className='w-full flex justify-center items-center py-4 px-2
+            md:px-12 font-merriweather'
         >
-            {/* Logo */}
-            <a
-                href='#'
-                className='text-white text-2xl uppercase
-                tracking-wide md:cursor-pointer italic'
-            >
-                Paulith
-            </a>
-            <NavbarLinks />
-            <CartButton nav={nav} handleNav={handleNav} />
-            <ToggleMenu nav={nav} handleNav={handleNav} />
+            <NavbarLinksLeft />
+            <Logo />
+            <div className='flex-1 flex justify-end'>
+                <NavbarLinksRight />
+                <CartButton nav={nav} handleNav={handleNav} />
+                <ToggleMenu nav={nav} handleNav={handleNav} />
+            </div>
         </div>
     );
 };
