@@ -4,16 +4,16 @@ import PaulithLogo from "../../assets/Logo/PaulithLogo.png";
 
 const Logo = () => {
   return (
-    <div className='flex justify-center'>
+    <>
       <Link className='flex items-center text-yellow-800 text-xl' to="/#">
         <img
             src={PaulithLogo}
             alt="Logo"
-            className='w-[4.5rem]'
+            className='w-[3rem] pr-3'
         />
         <span>PAULITH</span>
       </Link>
-    </div>
+    </>
   );
 };
 
