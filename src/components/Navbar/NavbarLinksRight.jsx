@@ -8,23 +8,17 @@ const NavbarLinksRight = () => {
         <ul
             className='flex flex-col md:flex-row md:gap-12 gap-6 text-sm'
         >    
-          <li>
-            <Link
-                to={MenuLinks[3].link}
-                className='text-yellow-800 uppercase hover:text-yellow-600'
-            >
-                {MenuLinks[3].name}
-            </Link>
-          </li>
-          <li>
-            <Link
-                to={MenuLinks[4].link}
+          {MenuLinks.slice(3, 5).map(link => (
+            <li key={link.id}>
+              <Link
+                to={link.link}
                 className='text-yellow-800 uppercase
                 hover:text-yellow-600'
-            >
-                {MenuLinks[4].name}
-            </Link>
-          </li>
+              >
+                {link.name}
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
   );

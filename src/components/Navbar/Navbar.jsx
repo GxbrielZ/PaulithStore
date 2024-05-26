@@ -3,7 +3,7 @@ import NavbarLinksLeft from './NavbarLinksLeft';
 import NavbarLinksRight from './NavbarLinksRight';
 import Logo from './Logo';
 import CartButton from './CartButton';
-import ToggleMenu from './ToggleMenu';
+import MobileMenu from '../MobileMenu/MobileMenu';
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -13,16 +13,15 @@ const Navbar = () => {
 
     return (
         <div 
-            className='w-full flex justify-center items-center py-4 px-2
-            md:px-12 font-merriweather'
+            className='relative w-full flex justify-center items-center px-4 md:px-12 md:py-1 font-merriweather'
         >
-            <NavbarLinksLeft />
+            <NavbarLinksLeft nav={nav} handleNav={handleNav} />
             <Logo />
             <div className='flex-1 flex justify-end'>
                 <NavbarLinksRight />
-                <CartButton nav={nav} handleNav={handleNav} />
-                <ToggleMenu nav={nav} handleNav={handleNav} />
+                <CartButton />
             </div>
+            {nav && <MobileMenu />}
         </div>
     );
 };
