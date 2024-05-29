@@ -1,41 +1,58 @@
 import React from 'react';
-import HeroPic from "../../assets/Hero/HeroPic.jpg";
-
-const HeroData = [
-    {
-        id: 1,
-        img: HeroPic,
-        title: "Magia biżuterii",
-        buttonTitle: "Sprawdź Ofertę",
-        description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    },
-];
+import { Link } from 'react-router-dom';
+import Bracelet from "../../assets/Categories/Bracelet.jpg";
 
 const Hero = () => {
     return (
-      <div className='relative w-full h-[93vh] font-lato'>
-        <img className='top-0 left-0 w-full h-full object-cover' src={HeroPic} alt="" />
-        <div className='bg-black/30 absolute top-0 left-0 w-full h-[93vh]'></div>
-        <div className='absolute top-0 w-full h-full flex flex-col justify-center text-white'>
-            <div className='absolute left-[5vw] md:left-[10vw]'>
-                <h1 className='font-bold text-4xl drop-shadow-2xl'>
-                    {HeroData[0].title}
-                </h1>
-                <p className='max-w-[90vw] md:max-w-[80vw]
-                lg:max-w-[50vw] drop-shadow-2xl my-5 text-[1.15rem]
-                md:text-xl'>
-                    {HeroData[0].description}
+      <div className="px-4 md:px-20 text-yellow-800">
+        <h1 className="text-6xl text-center italic py-8
+        font-merriweather"
+        >
+            Magia Biżuterii
+        </h1>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="">
+            <img
+                src={Bracelet}
+                alt="Jewelry 1"
+                className="w-full aspect-[5/6] object-cover"
+            />
+          </div>
+          <div className="">
+            <img
+                src={Bracelet}
+                alt="Jewelry 2"
+                className="w-full aspect-[5/6] object-cover"
+            />
+          </div>
+          <div className="">
+            <img
+                src={Bracelet}
+                alt="Jewelry 3"
+                className="w-full aspect-[8/5] object-cover"
+            />
+            <div className="mt-6 text-yellow-800 font-merriweather">
+                <p className='mt-2'>
+                    Zanurz się w świecie unikalnych klejnotów, gdzie każdy element jest wyjątkowy.
                 </p>
-                <button
-                    className='border rounded-lg p-2 hover:text-black
-                    hover:bg-white duration-700'
-                >
-                    {HeroData[0].buttonTitle}
-                </button>
+                <p className='mt-2'>
+                    Nasza ręcznie robiona biżuteria z minerałów łączy w sobie naturalne piękno i precyzję, tworząc niezwykłe dzieła sztuki.
+                </p>
+                <p className='mt-2'>
+                    Pozwól, aby nasze wyjątkowe kolekcje dodały blasku Twojemu życiu.
+                </p>
+                <div className='flex justify-end mt-6'>
+                    <Link
+                        to="/#"
+                        className="bg-yellow-800 hover:bg-yellow-900 text-white font-semibold py-2 px-12 rounded"
+                    >
+                        Odkryj
+                    </Link>
+                </div>
             </div>
+          </div>
         </div>
-      </div>  
+      </div>
     );
 };
 
