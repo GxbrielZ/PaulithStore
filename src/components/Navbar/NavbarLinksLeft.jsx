@@ -10,17 +10,17 @@ const NavbarLinksLeft = ({ nav, handleNav }) => {
             <IoClose
                 onClick={handleNav}
                 className='text-3xl text-yellow-800 cursor-pointer
-                z-50 md:hidden fixed'
+                z-50 lg:hidden fixed'
             />
         ) : (
             <IoMenu
                 onClick={handleNav}
-                className='text-3xl text-yellow-800 cursor-pointer md:hidden'
+                className='text-3xl text-yellow-800 cursor-pointer lg:hidden'
             />
       )}
-      <div className='md:flex hidden'>
+      <div className='lg:flex hidden'>
         <ul
-            className='flex flex-col md:flex-row md:gap-12 gap-6 text-sm'
+            className='flex flex-col lg:flex-row lg:gap-8 gap-6 text-sm'
         >    
           {MenuLinks.slice(0, 3).map(link => (
             <li key={link.id}>

@@ -4,7 +4,7 @@ const TextBanner = ({ inputText }) => {
   return (
     <div>
         <h1
-            className='uppercase text-center m-10 text-2xl text-yellow-800'
+            className='uppercase text-center m-10 text-2xl text-yellow-800 font-merriweather'
         >
             {inputText}
         </h1>

@@ -13,7 +13,7 @@ const Navbar = () => {
 
     return (
         <div 
-            className='relative w-full flex justify-center items-center px-4 md:px-12 md:py-1 font-merriweather shadow-md'
+            className='relative w-full flex justify-center items-center px-4 lg:px-12 md:py-1 font-merriweather shadow-md'
         >
             <NavbarLinksLeft nav={nav} handleNav={handleNav} />
             <Logo />

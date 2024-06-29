@@ -6,12 +6,12 @@ const SliderItem = ({ imageSrc, linkTo, prodName, prodPrice }) => {
     <Link to={linkTo}>
         <div
           className='mx-4 md:mx-3 shadow-md rounded-lg hover:scale-105
-          duration-700 my-4'
+          duration-700 my-4 font-merriweather'
         >
             <img
                 src={imageSrc}
                 alt="#"
-                className="w-full aspect-[4/3] md:aspect-[1/1]
+                className="w-full sm:aspect-[4/3] md:aspect-[1/1]
                 lg:aspect-[2/2] object-cover rounded-t-lg"
             />
             <div className='p-4'>

@@ -4,9 +4,9 @@ import MenuLinks from '../../data/MenuLinks';
 
 const NavbarLinksRight = () => {
   return (
-    <div className='md:flex hidden items-center md:mr-6'>
+    <div className='lg:flex hidden items-center lg:mr-6'>
         <ul
-            className='flex flex-col md:flex-row md:gap-12 gap-6 text-sm'
+            className='flex flex-col lg:flex-row lg:gap-8 gap-6 text-sm'
         >    
           {MenuLinks.slice(3, 5).map(link => (
             <li key={link.id}>

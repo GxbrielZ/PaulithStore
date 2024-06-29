@@ -4,7 +4,7 @@ import TextArea from '../Shared/TextArea';
 
 const Contact = () => {
   return (
-    <div className='mb-10 flex items-center justify-center'>
+    <div className='mb-10 flex items-center justify-center font-merriweather'>
       <form>
         <div className='md:flex md:gap-5'>
           <FormField
@@ -31,7 +31,7 @@ const Contact = () => {
           <button
             type='submit'
             className='bg-yellow-800 hover:bg-yellow-900 text-white
-            font-semibold py-2 px-6 rounded'
+            py-2 px-6 rounded'
           >
             Wyślij Wiadomość
           </button>

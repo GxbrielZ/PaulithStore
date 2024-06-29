@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className='w-full text-center border-t border-gray-200 py-4'>
+    <footer className='w-full text-center border-t border-gray-200 py-4 font-merriweather'>
       <div className='flex flex-col sm:flex-row justify-between items-center mx-[1.5rem] md:mx-[2.5rem] text-yellow-800'>
         <div className='text-sm'>
           &copy; 2024 PAULITH STORE

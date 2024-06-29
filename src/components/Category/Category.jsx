@@ -9,8 +9,8 @@ const Category = () => {
   return (
     <div className="m-10 flex justify-center">
         <div
-          className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4
-          gap-5 lg:gap-8'
+          className='grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4
+          gap-5 lg:gap-8 font-merriweather italic'
         >
             <CategoryItem imageSrc={Necklease} overlayText='Naszyjniki' />
             <CategoryItem imageSrc={Ring} overlayText='Pierścionki' />

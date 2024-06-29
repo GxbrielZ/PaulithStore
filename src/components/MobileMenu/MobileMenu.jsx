@@ -6,7 +6,7 @@ const MobileMenu = () => {
   return (
     <div
         className='fixed top-0 left-0 w-full min-h-screen bg-white
-        z-40 flex flex-col justify-start md:hidden
+        z-40 flex flex-col justify-start lg:hidden
         py-[6.5rem] pl-[1.5rem]'
     >
         <ul className='flex flex-col gap-10 text-2xl'>
