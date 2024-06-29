@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { MdOutlineShoppingBag } from "react-icons/md";
 
 const CartButton = () => {

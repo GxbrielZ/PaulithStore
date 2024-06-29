@@ -1,6 +1,6 @@
 import React from 'react';
-import FormField from '../Shared/FormField';
-import TextArea from '../Shared/TextArea';
+import FormField from './FormField';
+import TextArea from './TextArea';
 
 const Contact = () => {
   return (

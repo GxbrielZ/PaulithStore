@@ -1,5 +1,5 @@
 import React from 'react';
-import CategoryItem from '../Shared/CategoryItem';
+import CategoryItem from "./CategoryItem"
 import Necklease from "../../assets/Categories/Necklease.jpg";
 import Ring from "../../assets/Categories/Ring.jpg";
 import Image2 from "../../assets/Categories/Image2.jpg";

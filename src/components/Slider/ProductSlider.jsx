@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from "react-slick";
-import SliderItem from '../Shared/SliderItem';
+import SliderItem from './SliderItem';
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import Product1 from "../../assets/ProductSlider/Product1.jpg";
