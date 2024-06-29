@@ -14,9 +14,9 @@ const SliderItem = ({ imageSrc, linkTo, prodName, prodPrice }) => {
                 className="w-full sm:aspect-[4/3] md:aspect-[1/1]
                 lg:aspect-[2/2] object-cover rounded-t-lg"
             />
-            <div className='p-4'>
-              <h1 className='mb-2 text-xl'>{prodName}</h1>
-              <p className='mb-2 text-lg'>{prodPrice}</p>
+            <div className='p-4 text-yellow-900'>
+              <h1 className='mb-2'>{prodName}</h1>
+              <p className='mb-2'>{prodPrice}</p>
             </div>
         </div>
     </Link>

@@ -75,8 +75,8 @@ const ProductSlider = () => {
   return (
     <div className="slider-container mx-8">
       <Slider {...settings}>
-        <SliderItem imageSrc={Product1} prodName="Pierścionek" prodPrice="100 PLN" />
-        <SliderItem imageSrc={Product2} prodName="Bransoletka" prodPrice="160 PLN" />
+        <SliderItem imageSrc={Product1} prodName="Górskie Oczyszczenie" prodPrice="100 PLN" />
+        <SliderItem imageSrc={Product2} prodName="Wymyślić nazwę" prodPrice="160 PLN" />
         <SliderItem imageSrc={Product3} prodName="Pierścionek" prodPrice="130 PLN" />
         <SliderItem imageSrc={Product4} prodName="Zestaw Biżuterii" prodPrice="180 PLN" />
         <SliderItem imageSrc={Product5} prodName="Naszyjnik" prodPrice="250 PLN" />
