@@ -14,9 +14,15 @@ const SliderItem = ({ imageSrc, linkTo, prodName, prodPrice }) => {
                 className="w-full sm:aspect-[4/3] md:aspect-[1/1]
                 lg:aspect-[2/2] object-cover rounded-t-lg"
             />
-            <div className='p-4 text-yellow-900'>
-              <h1 className='mb-2'>{prodName}</h1>
-              <p className='mb-2'>{prodPrice}</p>
+            <div className='p-4 text-yellow-900 flex flex-col'>
+              <div className='flex justify-between mb-4 text-lg'>
+                <h1 className='truncate max-w-xs'>{prodName}</h1>
+                <p>{prodPrice}</p>
+              </div>
+              <button className='bg-yellow-800 hover:bg-yellow-900 text-white p-2 rounded'
+              >
+                Dodaj do koszyka
+              </button>
             </div>
         </div>
     </Link>
