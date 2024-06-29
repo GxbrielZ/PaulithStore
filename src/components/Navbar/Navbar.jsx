@@ -5,7 +5,7 @@ import Logo from './Logo';
 import CartButton from './CartButton';
 import MobileMenu from '../MobileMenu/MobileMenu';
 
-const Navbar = () => {
+const Navbar = ({ cartItems, setCartItems }) => {
     const [nav, setNav] = useState(false);
     const handleNav = () => {
         setNav(!nav);
@@ -19,7 +19,10 @@ const Navbar = () => {
             <Logo />
             <div className='flex-1 flex justify-end'>
                 <NavbarLinksRight />
-                <CartButton />
+                <CartButton
+                    cartItems={cartItems}
+                    setCartItems={setCartItems}
+                />
             </div>
             {nav && <MobileMenu />}
         </div>
