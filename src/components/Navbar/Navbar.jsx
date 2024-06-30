@@ -13,7 +13,7 @@ const Navbar = ({ cartItems, setCartItems }) => {
 
     return (
         <div 
-            className='relative w-full flex justify-center items-center px-4 lg:px-12 md:py-1 font-merriweather shadow-md'
+            className='sticky top-0 z-50 w-full flex justify-center items-center px-4 lg:px-12 md:py-1 font-merriweather shadow-md bg-white'
         >
             <NavbarLinksLeft nav={nav} handleNav={handleNav} />
             <Logo />

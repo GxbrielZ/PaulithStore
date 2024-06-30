@@ -10,7 +10,7 @@ const NavbarLinksLeft = ({ nav, handleNav }) => {
             <IoClose
                 onClick={handleNav}
                 className='text-3xl text-yellow-800 cursor-pointer
-                z-50 lg:hidden fixed'
+                z-50 lg:hidden fixed top-4 right-4'
             />
         ) : (
             <IoMenu
