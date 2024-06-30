@@ -8,7 +8,7 @@ const Logo = () => {
       <img
           src={PaulithLogo}
           alt="Logo"
-          className='w-[3rem] pr-3'
+          className='w-[2.3rem] pr-3'
       />
       <span>PAULITH</span>
     </Link>
