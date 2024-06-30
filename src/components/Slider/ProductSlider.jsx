@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Slider from "react-slick";
 import SliderItem from './SliderItem';
 import { IoIosArrowBack } from "react-icons/io";
@@ -9,7 +9,6 @@ import Product3 from "../../assets/ProductSlider/Product3.jpg";
 import Product4 from "../../assets/ProductSlider/Product4.jpg";
 import Product5 from "../../assets/ProductSlider/Product5.jpg";
 import Product6 from "../../assets/ProductSlider/Product6.jpg";
-import CartButton from '../Navbar/CartButton'
 
 function NextBtn(props) {
   const { onClick } = props;

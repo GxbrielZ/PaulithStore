@@ -12,7 +12,9 @@ const Home = () => {
   const [cartItems, setCartItems] = useState([]);
 
   const addToCart = (item) => {
-    setCartItems([...cartItems, item]);
+    if (!cartItems.some(cartItem => cartItem.prodName === item.prodName)) {
+      setCartItems([...cartItems, item]);
+    }
   };
 
   return (
