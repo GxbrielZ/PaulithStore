@@ -7,19 +7,14 @@ import ProductSlider from '../Slider/ProductSlider';
 import ProjectSection from '../ProjectSection/ProjectSection';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
+import { useCart } from '../Navbar/CartContext';
 
 const Home = () => {
-  const [cartItems, setCartItems] = useState([]);
-
-  const addToCart = (item) => {
-    if (!cartItems.some(cartItem => cartItem.prodName === item.prodName)) {
-      setCartItems([...cartItems, item]);
-    }
-  };
+  const { cartItems, addToCart } = useCart();
 
   return (
     <div>
-        <Navbar cartItems={cartItems} setCartItems={setCartItems} />
+        <Navbar cartItems={cartItems} />
         <Hero />
         <TextBanner inputText='Tworzone z naturalnych kamieni i minerałów' />
         <Category />

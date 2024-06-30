@@ -1,8 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { MdOutlineShoppingBag } from "react-icons/md";
 import { FaTrashAlt } from "react-icons/fa";
+import { useCart } from './CartContext';
 
-const CartButton = ({ cartItems = [], setCartItems }) => {
+const CartButton = () => {
+  const { cartItems, removeFromCart } = useCart();
   const [isOpen, setIsOpen] = useState(false);
   const cartRef = useRef();
 
@@ -18,12 +20,6 @@ const CartButton = ({ cartItems = [], setCartItems }) => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
-
-  const removeFromCart = (index) => {
-    const newCartItems = [...cartItems];
-    newCartItems.splice(index, 1);
-    setCartItems(newCartItems);
-  };
 
   return (
     <div
@@ -71,7 +67,7 @@ const CartButton = ({ cartItems = [], setCartItems }) => {
                     </span>
                     <button
                       className='ml-5 hover:text-yellow-700'
-                      onClick={() => removeFromCart(index)}
+                      onClick={() => removeFromCart(item.prodName)}
                     >
                       <FaTrashAlt />
                     </button>

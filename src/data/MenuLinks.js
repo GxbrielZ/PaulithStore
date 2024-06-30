@@ -12,7 +12,7 @@ const MenuLinks = [
     {
         id: 3,
         name: "Materiały",
-        link: "/#materials"
+        link: "/materials"
     },
     {
         id: 4,
