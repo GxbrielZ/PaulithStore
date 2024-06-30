@@ -1,13 +1,13 @@
 const MenuLinks = [
     {
         id: 1,
-        name: "Biżuteria",
-        link: "/#jewellery"
+        name: "Strona główna",
+        link: "/#"
     },
     {
         id: 2,
-        name: "Komplety Biżuterii",
-        link: "/#sets"
+        name: "Biżuteria",
+        link: "/#jewellery"
     },
     {
         id: 3,
