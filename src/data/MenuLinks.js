@@ -17,7 +17,7 @@ const MenuLinks = [
     {
         id: 4,
         name: "Regulamin",
-        link: "/#terms"
+        link: "/regulations"
     },
     {
         id: 5,
