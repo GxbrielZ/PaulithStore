@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -8,15 +9,15 @@ const Footer = () => {
           &copy; 2024 PAULITH STORE
         </div>
         <div className='flex space-x-6 sm:mt-0 mt-2 text-sm'>
-          <a href="#" className='hover:text-yellow-600'>
+          <Link to="#" className='hover:text-yellow-600'>
             O NAS
-          </a>
-          <a href="#" className='hover:text-yellow-600'>
+          </Link>
+          <Link to='/regulations' className='hover:text-yellow-600'>
             REGULAMIN
-          </a>
-          <a href="#" className='hover:text-yellow-600'>
+          </Link>
+          <Link to="#" className='hover:text-yellow-600'>
             POLITYKA PRYWATNOŚCI
-          </a>
+          </Link>
         </div>
       </div>
     </footer>
