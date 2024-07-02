@@ -7,7 +7,7 @@ const MenuLinks = [
     {
         id: 2,
         name: "Biżuteria",
-        link: "/#jewellery"
+        link: "/jewellery"
     },
     {
         id: 3,
@@ -22,7 +22,7 @@ const MenuLinks = [
     {
         id: 5,
         name: "Kontakt",
-        link: "/#contact"
+        link: "/contact"
     },
 ];
 
